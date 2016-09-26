@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - laravel_pst@127.0.0.1" uuid="5ef817c9-574d-4d5f-b977-21f87bb22dfa">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="PostgreSQL - da3seivpkn19e3@ec2-176-34-127-73.eu-west-1.compute.amazonaws.com" uuid="29ee81b3-6f46-43d3-80e2-7e891c85814b">
+      <secret-storage>master_key</secret-storage>
+      <user-name>uuyfjkkrpcsplv</user-name>
+      <ssl-config>
+        <enabled>true</enabled>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>

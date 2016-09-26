@@ -1,0 +1,29 @@
+/*YOUR CUSTOM STYLES*/
+.navbar-main-search {
+    width: 60%;
+    }
+    .product{
+    	padding: 1px;
+    }
+ .product-img-wrap {
+    min-height: 264px;
+        margin: 10px;
+
+}
+
+@media (max-width: 992px){
+.navbar-main-search {
+    width: 100%;
+}
+.navbar-nav > li > a {
+    font-size: 12px;
+}
+}
+
+.owl-item-slide .product-img-wrap {
+    min-height: 189px;
+}
+
+.product-sm .product-img-wrap {
+    min-height: 264px;
+}
