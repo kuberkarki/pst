@@ -1,0 +1,49 @@
+{
+  "name": "pst",
+  "scripts": {
+  },
+  "env": {
+    "APP_KEY": {
+      "required": true
+    },
+    "CLOUDINARY_API_KEY": {
+      "required": true
+    },
+    "CLOUDINARY_API_SECRET": {
+      "required": true
+    },
+    "CLOUDINARY_CLOUD_NAME": {
+      "required": true
+    },
+    "MAIL_PASSWORD": {
+      "required": true
+    },
+    "MAIL_USERNAME": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "herokuconnect",
+    "heroku-postgresql",
+    "scheduler"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
