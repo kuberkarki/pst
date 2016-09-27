@@ -456,6 +456,7 @@ class FrontEndController extends JoshController
             $blocks2=array();
             $i=0;
             $b++;
+            if(count($blocks_raw))
             foreach($blocks_raw->images()->get()->take(1) as $im){
                 if (filter_var($im->attigo__background_image_or_color__c, FILTER_VALIDATE_URL)) { 
                           $blocks[$j][$i]['bg']="background-image:url(".$im->attigo__background_image_or_color__c.");";
