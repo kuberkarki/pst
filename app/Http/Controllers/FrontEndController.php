@@ -250,7 +250,7 @@ class FrontEndController extends JoshController
          }*/
        //echo $pricebookid;exit;
 
-         if(!$contract->pricebook2id)
+         if(!isset($contract->pricebook2id))
             return url('index')->with('error','No Pricebook Assigned Please contact administrator');
         $i=0;
         $products=array();
