@@ -18,7 +18,7 @@ Home
 {{-- content --}}
 @section('content')
    <div class="owl-carousel owl-loaded owl-nav-dots-inner" data-options='{"items":1,"loop":true}'>
-    @if(count($blocks[1])
+    @if(count($blocks[1]))
     @foreach($blocks[1] as $block)
             <div class="owl-item">
                 <div class="slider-item" style="{!! $block['bg'] or '' !!}">
