@@ -256,7 +256,7 @@ class ProductController extends JoshController {
         $product->prices=$price;
     //dd($price);
         //echo $price->tier2_to_5__c;exit;
-        $product->pricesarr=array($price->attigo__tier_1_price__c,$price->attigo__tier_2_price__c,$price->attigo__tier_3_price__c,$price->attigo__tier_4_price__c,$price->attigo__tier_5_price__c);
+        $product->pricesarr=array($price->attigo_tier_1_price__c,$price->attigo_tier_2_price__c,$price->attigo_tier_3_price__c,$price->attigo_tier_4_price__c,$price->attigo_tier_5_price__c);
        /* $product->pricesarr[]=$price->tier2_to_5__c;
         $product->pricesarr[]=$price->tier6_to_10__c;
         $product->pricesarr[]=$price->tier11_to_25__c;

@@ -357,7 +357,7 @@ class OrderController extends JoshController
 
             $selprice=$price->unitprice;
 
-            $pricearr=array($price->attigo__tier_1_price__c,$price->attigo__tier_2_price__c,$price->attigo__tier_3_price__c,$price->attigo__tier_4_price__c,$price->attigo__tier_5_price__c);
+            $pricearr=array($price->attigo_tier_1_price__c,$price->attigo_tier_2_price__c,$price->attigo_tier_3_price__c,$price->attigo_tier_4_price__c,$price->attigo_tier_5_price__c);
 
            // print_r($pricearr);exit;
             $i=0;
@@ -419,7 +419,7 @@ class OrderController extends JoshController
 
                 $rowId = Cart::search(array('id' => $request->get('product_id')));
                 $item = Cart::get($rowId[0]);
-                $pricearr=array($price->attigo__tier_1_price__c,$price->attigo__tier_2_price__c,$price->attigo__tier_3_price__c,$price->attigo__tier_4_price__c,$price->attigo__tier_5_price__c);
+                $pricearr=array($price->attigo_tier_1_price__c,$price->attigo_tier_2_price__c,$price->attigo_tier_3_price__c,$price->attigo_tier_4_price__c,$price->attigo_tier_5_price__c);
 
            // print_r($pricearr);exit;
                 $i=0;
@@ -462,7 +462,7 @@ class OrderController extends JoshController
             $pricearr=array();
 
 
-            $pricearr=array($price->attigo__tier_1_price__c,$price->attigo__tier_2_price__c,$price->tattigo__ier_3_price__c,$price->attigo__tier_4_price__c,$price->attigo__tier_5_price__c);
+            $pricearr=array($price->attigo_tier_1_price__c,$price->attigo_tier_2_price__c,$price->attigo_tier_3_price__c,$price->attigo_tier_4_price__c,$price->attigo_tier_5_price__c);
            // print_r($pricearr);exit;
             $i=0;
 
