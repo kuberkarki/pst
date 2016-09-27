@@ -91,7 +91,7 @@ class SF_OutboundMessageController extends Controller
     	ob_end_clean();
     	
     	Mail::send('emails.dev', ['msg' => $cont], function ($message) {
-    		$message->to('karki.kuber@gmail.com')->subject('debug');
+    		$message->to('karki.kuber@gmail.com')->subject('pstorder debug');
     	});
        
     	
@@ -192,7 +192,7 @@ class SF_OutboundMessageController extends Controller
         ob_end_clean();*/
         
         Mail::send('emails.dev', ['msg' => $content], function ($message) {
-            $message->to('karki.kuber@gmail.com')->subject('debug product added');
+            $message->to('karki.kuber@gmail.com')->subject('pstorder debug product added');
         });
        
         
