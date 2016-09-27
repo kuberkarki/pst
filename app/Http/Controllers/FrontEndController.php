@@ -118,6 +118,7 @@ class FrontEndController extends JoshController
         $current_category=$selected_category->id;
         $user = Sentinel::getUser();
         $contact=Contact::where('email',$user->email)->with('account')->first();
+        dd($contact);
         //$contract=Contract::where('accountid',$contact->account->sfid)->first();
         $contract=Contract::where('accountid',$contact->account->sfid)->with('pricebook')->first();
 
@@ -250,7 +251,6 @@ class FrontEndController extends JoshController
          }*/
        //echo $pricebookid;exit;
        //
-       dd($contract);
 
          if(!isset($contract->pricebook2id))
             return Redirect::route('home')->with('error','No Pricebook Assigned Please contact administrator');
