@@ -249,6 +249,9 @@ class FrontEndController extends JoshController
              $pricebookid=$contact->account->pricebook__c;
          }*/
        //echo $pricebookid;exit;
+
+         if(!$contract->pricebook2id)
+            return url('index')->with('error','No Pricebook Assigned Please contact administrator');
         $i=0;
         $products=array();
         foreach ($prods as $prod) {
