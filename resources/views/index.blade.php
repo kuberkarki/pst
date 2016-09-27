@@ -112,7 +112,7 @@ Home
                     @foreach($tabs_categories as $tab)
                         <div class="tab-pane fade {{ $tab['class']!=''?'in active':'' }}" id="tab-{{ $tab['id'] }}">
                             <div class="row" data-gutter="15">
-                            @if(isset($tab['products']))
+                            @if(array_key_exists('products', $$tab))
                             @foreach($tab['products'] as $product)
                                 <div class="col-md-2">
                                     <div class="product product-sm ">
