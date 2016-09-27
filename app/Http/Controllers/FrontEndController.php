@@ -514,6 +514,8 @@ class FrontEndController extends JoshController
             $slide_products['title']=$slide_products_category[0];
             if($contract)
             $slide_products['products']=$this->productsByCategoryId($slide_products_category[1],$attigo__product_access_level__c,$contract->pricebook2id);
+            else
+                $slide_products['products']=array();
         
 
 
