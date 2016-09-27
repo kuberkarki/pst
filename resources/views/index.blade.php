@@ -18,7 +18,7 @@ Home
 {{-- content --}}
 @section('content')
    <div class="owl-carousel owl-loaded owl-nav-dots-inner" data-options='{"items":1,"loop":true}'>
-    @if(count($blocks[1]))
+    @if(count($blocks))
     @foreach($blocks[1] as $block)
             <div class="owl-item">
                 <div class="slider-item" style="{!! $block['bg'] or '' !!}">
@@ -40,7 +40,7 @@ Home
             
    </div>
     <div class="row row-full" data-gutter="none">
-        @if(count($blocks[2]))
+        @if(count($blocks)>1)
         @foreach($blocks[2] as $block2)
             <div class="col-md-4">
                 <div class="banner banner-o-hid banner-sqr" style="{!!$block2['bg'] or '' !!}">
@@ -60,7 +60,7 @@ Home
         @endif
 
 
-        @if(count($blocks[3]))
+        @if(count($blocks)>2)
         @foreach($blocks[3] as $block)
             <div class="col-md-4">
                 <div class="banner banner-o-hid banner-sqr" style="{{$block['bg'] or ''}}">
@@ -79,7 +79,7 @@ Home
         @endforeach
         @endif
 
-        @if(count($blocks[4]))
+        @if(count($blocks)>3)
         @foreach($blocks[4] as $block)
             <div class="col-md-4">
                 <div class="banner banner-o-hid banner-sqr" style="{{$block['bg'] or ''}}">
@@ -157,7 +157,7 @@ Home
             </div>
             <div class="gap"></div>
             <div class="row" data-gutter="15">
-            @if(count($blocks[5]))
+            @if(count($blocks)>4)
             @foreach($blocks[5] as $block)
                 <div class="col-md-6">
                     <div class="banner banner-o-hid" style="{{$block['bg'] or ''}}">
@@ -175,7 +175,7 @@ Home
                 </div>
             @endforeach
             @endif
-            @if(count($blocks[6]))
+            @if(count($blocks)>5)
             @foreach($blocks[6] as $block)
                 <div class="col-md-6">
                     <div class="banner banner-o-hid" style="{{$block['bg'] or ''}}">
