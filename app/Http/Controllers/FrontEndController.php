@@ -502,6 +502,7 @@ class FrontEndController extends JoshController
                 $tabs_categories[$i]['class']='';
             $tabs_categories[$i]['id']=$marketing[$i+1];
             $tabs_categories[$i]['name']=$marketing[$i];
+            if($attigo__product_access_level__c)
             $tabs_categories[$i]['products']=$this->productsByCategoryId($marketing[$i+1],$attigo__product_access_level__c,$contract->pricebook2id);
         }
 
