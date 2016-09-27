@@ -36,6 +36,7 @@ Home
                 </div>
             </div>
     @endforeach
+    @endif
             
    </div>
     <div class="row row-full" data-gutter="none">
@@ -56,6 +57,7 @@ Home
                 </div>
             </div>
         @endforeach
+        @endif
 
 
         @if($blocks[3])
@@ -75,6 +77,7 @@ Home
                 </div>
             </div>
         @endforeach
+        @endif
 
         @if($blocks[4])
         @foreach($blocks[4] as $block)
@@ -93,6 +96,7 @@ Home
                 </div>
             </div>
         @endforeach
+        @endif
             
         <div class="gap"></div>
         <div class="container">
@@ -170,6 +174,7 @@ Home
                     </div>
                 </div>
             @endforeach
+            @endif
             @if($blocks[6])
             @foreach($blocks[6] as $block)
                 <div class="col-md-6">
@@ -187,6 +192,7 @@ Home
                     </div>
                 </div>
             @endforeach
+            @endif
                 
             </div>
             <div class="gap"></div>
