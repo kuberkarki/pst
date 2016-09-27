@@ -90,8 +90,8 @@ return [
             'password' => $password,
             'charset'  => 'utf8',
             'prefix'   => '',
-            'schema'   => array('salesforce','public')
-            //'schema'   => 'salesforce'
+            //'schema'   => array('salesforce','public')
+            'schema'   => 'salesforce'
         ],
 
         'sqlsrv' => [
