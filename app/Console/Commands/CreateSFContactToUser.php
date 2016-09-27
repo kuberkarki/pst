@@ -55,7 +55,7 @@ class CreateSFContactToUser extends Command
         $lastuser=User::orderBy('created_at','DESC')->first();
         $this->info($lastuser->created_at->format('Y-m-d H:i:s'));
         //print_r($lastuser->created_at);exit;
-        $contacts=Contact::where('createddate','>',$lastuser->created_at->format('Y-m-d H:i:s'))->where('express_portal_access__c','Y')->get();
+        $contacts=Contact::where('createddate','>',$lastuser->created_at->format('Y-m-d H:i:s'))->where('attigo__express_portal_access__c','Y')->get();
 
        // print_r($contacts);
         foreach($contacts as $contact){
@@ -91,7 +91,7 @@ class CreateSFContactToUser extends Command
             $msg=str_replace('%Store_name',$settings->attigo__store_name__c,$msg);
             $msg=str_replace('%store_name',$settings->attigo__store_name__c,$msg);
 
-            $sender=array('address' => $settings->attigo__transactional_email_sender__c, 'name' => $settings->attigo__store_name__c);
+            $sender=array('address' => $settings->attigo__transactional_email_sender__c, 'name' => $settings->attigo__attigo__store_name__c);
 
 
                 $data = array(
