@@ -145,7 +145,7 @@
                 <form id="search"  class="navbar-form navbar-left navbar-main-search navbar-main-search-category" role="search" style="padding: 0px;">
                     
                     <div class="form-group">
-                        <input class="form-control" name="query" id="query" type="text" value="{{ $q or '' }}" placeholder="@lang('general.search_products')Search Products..." />
+                        <input class="form-control" name="query" id="query" type="text" value="{{ $q or '' }}" placeholder="Search Products..." />
                     </div>
                     <a onclick="$('#search').submit();" class="fa fa-search navbar-main-search-submit" href="#"></a>
                 </form>
