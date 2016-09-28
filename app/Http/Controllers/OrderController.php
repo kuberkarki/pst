@@ -685,10 +685,13 @@ class OrderController extends JoshController
         $shippingproduct=Product::where('productcode','Shipping')->first();
         $shipping_vat=0;
         //echo $product->name;exit;
-        if($shippingproduct->attigo__vat__c){
+        if(isset($shippingproduct->attigo__vat__c)){
             $shipping_vat=($shippingamount*$shippingproduct->attigo__vat__c)/100;
             $order_vat +=$shipping_vat;
 
+        }else{
+            $shipping_vat=0;
+            $order_vat +=0;
         }
         //echo $order_vat;exit;
        // echo $order_vat;exit;
