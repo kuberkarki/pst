@@ -709,7 +709,9 @@ class FrontEndController extends JoshController
         foreach($shipments as $shipment){
                 //echo $shipment->attigo__weight_from_kg__c;exit;
                 if($products_weight>=$shipment->attigo__weight_from_kg__c && $products_weight <= $shipment->attigo__weight_to_kg__c){
-                    if($large_shipment==1 && $shipment->attigo__can_handle_large_object__c==1)
+                    /*if($large_shipment==1 && $shipment->attigo__can_handle_large_object__c==1)
+                        $shipmentoptions[]=$shipment;*/
+                    if( $shipment->attigo__can_handle_large_object__c==1)
                         $shipmentoptions[]=$shipment;
                     if($large_shipment==0 && $shipment->attigo__can_handle_large_object__c==0)
                         $shipmentoptions[]=$shipment;
