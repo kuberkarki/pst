@@ -875,6 +875,7 @@ class OrderController extends JoshController
         if($shippingamount>0){
             $product=Product::where('productcode','Shipping')->first();
             //echo $product->name;exit;
+            if($product){
             $price=Pricebookentry::where('product2id',$product->sfid)->where('pricebook2id',$pricebookid)->first();
 
 
@@ -896,6 +897,7 @@ class OrderController extends JoshController
             'attigo__product_vat_pct__c'=>$shippingproduct->attigo__vat__c
             //'createddate'=>date('Y-m-d H:i:s'),
         ]);
+        }
 
             
 
