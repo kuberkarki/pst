@@ -760,7 +760,7 @@ class OrderController extends JoshController
             'externalid__c'=>$orderid,
            'pricebook2id'=>$pricebookid,
             'totalamount'=>floatval($amount),
-            'name'=>'',
+            //'name'=>'',
             'effectivedate'=>date('Y-m-d'),
             'customerauthorizedbyid'=>$contact->sfid,
             'attigo__ecommerce_order_contact__c'=>$contact->sfid,
