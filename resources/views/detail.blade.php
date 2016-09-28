@@ -104,7 +104,7 @@ Product | {{$product->name}}
                             <div class="box-highlight">
                                 <!-- <p class="product-page-price-list">$498</p> -->
                 
-                                @if($product->language__c)
+                                @if($product->attigo__language__c)
                                 Language:
                                     <select name="language" class="product-page-option-select" style="float: none;">
                                     @foreach($product->languages as $language)
